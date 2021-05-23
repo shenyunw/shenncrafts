@@ -1,0 +1,31 @@
+$shennCraft-bg-dark: #263538;
+$shennCraft-bg-light: #9c5c81;
+
+mat-sidenav-container, mat-sidenav-content, mat-sidenav {
+    height: 100%;
+}
+ 
+mat-sidenav {
+    width: 250px;
+}
+ 
+main {
+    padding: 10px;
+}
+
+.my-bg-dark{
+    background-color: $shennCraft-bg-dark;
+    color: white;
+    .navbar-nav .nav-link{
+		padding-left:10px;
+        color: white;
+    }
+}
+
+.navbar-dark .navbar-brand{
+	padding-left:10px;
+}
+
+.my-bg-light{
+    background-color: $shennCraft-bg-light;
+}
