@@ -18,10 +18,23 @@ body {
     font-family: Roboto, "Helvetica Neue", sans-serif;
 }
 
+h1 {
+    color: #cfe2f3;
+    font-family: "Pacifico";
+    font-weight: normal;
+}
+
+h2 {
+    color: #cfe2f3;
+    font-family: "Pacifico";
+    font-size: 24pt;
+}
+
 footer {
     background-color: gainsboro;
     width: -webkit-fill-available;
     margin-top: 5vw;
+    bottom: 0px;
     .footer-notes {
         display: flex;
         justify-content: space-around;
