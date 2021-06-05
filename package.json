@@ -10,7 +10,7 @@
         "git-build": "ng build",
         "prod": "ng build",
         "postinstall": "node ./node_modules/husky/lib/installer/bin install",
-        "deploy": "git push origin `git subtree split --prefix dist release`:gh-pages --force"
+        "deploy": "git push origin `git subtree split --prefix dist main`:gh-pages --force"
     },
     "husky": {
         "hooks": {
