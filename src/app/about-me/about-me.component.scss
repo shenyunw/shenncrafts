@@ -21,6 +21,11 @@
     }
 }
 
+@media only screen and(max-width:900px) {
+    .about-content {
+        padding-bottom: 130px;
+    }
+}
 @media only screen and (max-width: 750px) {
     .about-content {
         display: flex;
