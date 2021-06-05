@@ -7,7 +7,7 @@
         "build": "ng build",
         "watch": "ng build --watch --configuration development",
         "test": "ng test",
-        "git-build": "ng build --prod --baseHref='https://shenyunw.github.io/shenncrafts/'"
+        "git-build": "ng build --baseHref='https://shenyunw.github.io/shenncrafts/'"
     },
     "private": true,
     "dependencies": {
