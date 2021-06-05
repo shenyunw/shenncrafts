@@ -1,0 +1,25 @@
+# This script deploys your website automatically
+name: CI
+
+# Only trigger this script when you push to the master branch
+on:
+  push:
+    branches: [ release ]
+
+# Specify the tasks to run when this script gets triggered
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    # Download our master branch
+    steps:
+    - uses: actions/checkout@v2
+
+    # Run our deployment command
+    - name: Deploying the static website to gh-pages
+      run: npm run deploy
+      # Runs a set of commands using the runners shell
+      - name: Run a multi-line script
+        run: |
+          echo Add other actions to build,
+          echo test, and deploy your project.
