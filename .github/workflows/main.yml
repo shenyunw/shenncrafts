@@ -42,6 +42,6 @@ jobs:
             - name: Deploy to GitHub pages
               uses: JamesIves/github-pages-deploy-action@releases/v3
               with:
-                  GITHUB_TOKEN: ${{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}}
+                  GITHUB_TOKEN: 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
                   BRANCH: gh-pages
                   FOLDER: deploy_dist/shenncrafts
