@@ -16,6 +16,21 @@
 <style>@charset "UTF-8";body,html{margin:0;height:100%;}body{background:linear-gradient(to left top,rgba(0,0,0,.5),rgba(0,0,0,.5)) fixed,url(/assets/img/home-background.jpg);background-repeat:no-repeat;background-size:cover;display:flex;flex-direction:column;justify-content:space-between;min-width:400px;font-family:Roboto,Helvetica Neue,sans-serif;}footer{background-color:#dcdcdc;width:-webkit-fill-available;margin-top:5vw;bottom:0;}footer .footer-notes{display:flex;justify-content:space-around;padding-top:16px;}footer .footer-notes p{font-family:Caveat;font-size:18pt;line-height:40px;}@media only screen and (max-width:900px){body{background:linear-gradient(to left top,rgba(0,0,0,.5),rgba(0,0,0,.5)) fixed,url(/assets/img/home-background.jpg);background-repeat:repeat;background-size:cover;}}@media only screen and (max-width:750px){footer .footer-notes{display:flex;flex-direction:column;}footer .footer-notes p{text-align:center;}}:root{--bs-blue:#0d6efd;--bs-indigo:#6610f2;--bs-purple:#6f42c1;--bs-pink:#d63384;--bs-red:#dc3545;--bs-orange:#fd7e14;--bs-yellow:#ffc107;--bs-green:#198754;--bs-teal:#20c997;--bs-cyan:#0dcaf0;--bs-white:#fff;--bs-gray:#6c757d;--bs-gray-dark:#343a40;--bs-primary:#0d6efd;--bs-secondary:#6c757d;--bs-success:#198754;--bs-info:#0dcaf0;--bs-warning:#ffc107;--bs-danger:#dc3545;--bs-light:#f8f9fa;--bs-dark:#212529;--bs-font-sans-serif:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";--bs-font-monospace:SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;--bs-gradient:linear-gradient(180deg,hsla(0,0%,100%,0.15),hsla(0,0%,100%,0));}*,:after,:before{box-sizing:border-box;}@media (prefers-reduced-motion:no-preference){:root{scroll-behavior:smooth;}}body{margin:0;font-family:var(--bs-font-sans-serif);font-size:1rem;font-weight:400;line-height:1.5;color:#212529;background-color:#fff;-webkit-text-size-adjust:100%;-webkit-tap-highlight-color:transparent;}p{margin-top:0;margin-bottom:1rem;}</style><link rel="stylesheet" href="styles.e113ddbc784e7180a5f5.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="styles.e113ddbc784e7180a5f5.css"></noscript></head>
 
 <body class="mat-typography">
+    <!-- Github Pages hack to allow SPA refresh without receiving 404. -->
+    <script>
+        (function () {
+            // Retrieve the URL the user was trying to access when receiving the 404.
+            var redirect = sessionStorage.redirect;
+            // Remove the URL from sessionStorage.
+            delete sessionStorage.redirect;
+            // Check if we actually need to redirect.
+            if (redirect && redirect != location.href) {
+                // We need to redirect to the URL the user was trying to access.
+                history.replaceState(null, null, redirect);
+            }
+        })();
+    </script>
+    <!-- /Github Pages hack. -->
     <app-root></app-root>
 <script src="runtime.8924d374f77be848e707.js" defer></script><script src="polyfills.7826cc9afebcdb0cfabc.js" defer></script><script src="scripts.206995907876a2c78426.js" defer></script><script src="main.c6a1952f7f1c338f78bc.js" defer></script>
 
