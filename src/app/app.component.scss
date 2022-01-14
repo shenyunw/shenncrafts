@@ -24,6 +24,10 @@ main {
     .navbar-nav .nav-link {
         padding-left: 10px;
         color: white;
+
+        .active-link {
+            text-decoration: underline;
+        }
     }
 }
 
