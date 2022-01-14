@@ -7,7 +7,15 @@
         "build": "ng build",
         "watch": "ng build --watch --configuration development",
         "test": "ng test",
-        "git-build": "ng build --base-href='https://shenyunw.github.io/shenncrafts/'"
+        "git-build": "ng build",
+        "prod": "ng build",
+        "postinstall": "node ./node_modules/husky/lib/installer/bin install",
+        "deploy": "git push origin `git subtree split --prefix dist release`:gh-pages --force"
+    },
+    "husky": {
+        "hooks": {
+            "pre-commit": "npm run prod"
+        }
     },
     "private": true,
     "dependencies": {
@@ -34,6 +42,7 @@
         "@angular/compiler-cli": "~12.0.1",
         "@types/jasmine": "~3.6.0",
         "@types/node": "^12.11.1",
+        "husky": "^6.0.0",
         "jasmine-core": "~3.7.0",
         "karma": "~6.3.0",
         "karma-chrome-launcher": "~3.1.0",
